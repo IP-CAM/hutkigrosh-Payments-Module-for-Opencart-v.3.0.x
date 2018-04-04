@@ -1,14 +1,14 @@
 ## Модуль интеграции с CMS OpenCart  3.0.0
 
 Данный модуль обеспечивает взаимодействие между интернет-магазином на базе CMS Opencart версии 3.0.x и сервисом платежей [ХуткiГрош](hutkigrosh.by)
-  * Модуль интеграции для версии [OpenCart 1.5.x](https://github.com/esasby/hgrosh/tree/master/CMS/Plugins/OpenCart/1.5.5%20(http))
-  * Модуль интеграции для версии [OpenCart 2.1.x](https://github.com/esasby/hgrosh/tree/master/CMS/Plugins/OpenCart/2.1)
-  * Модуль интеграции для версии [OpenCart 2.2.x](https://github.com/esasby/hgrosh/tree/master/CMS/Plugins/OpenCart/2.2)
-  * Модуль интеграции для версии [OpenCart 2.3.x](https://github.com/esasby/hgrosh/tree/master/CMS/Plugins/OpenCart/2.3)
+  * Модуль интеграции для версии [OpenCart 1.5.x](https://github.com/esasby/hutkigrosh-opencart1.5-module)
+  * Модуль интеграции для версии [OpenCart 2.1.x](https://github.com/esasby/hutkigrosh-opencart2.1-module)
+  * Модуль интеграции для версии [OpenCart 2.2.x](https://github.com/esasby/hutkigrosh-opencart2.2-module)
+  * Модуль интеграции для версии [OpenCart 2.3.x](https://github.com/esasby/hutkigrosh-opencart2.3-module)
 
 ### Инструкция по установке:
 1. Создайте резервную копию вашего магазина и базы данных
-2. Установите модуль [opencart30-hutkigrosh-payment-module.ocmod.zip](https://github.com/esasby/hgrosh/blob/master/CMS/Plugins/OpenCart/3.0/opencart30-hutkigrosh-payment-module.ocmod.zip) с помощью _Модули_ -> _Установка расширений_
+2. Установите модуль [opencart30-hutkigrosh-payment-module.ocmod.zip](https://github.com/esasby/hutkigrosh-opencart3.0-module/blob/master/opencart30-hutkigrosh-payment-module.ocmod.zip) с помощью _Модули_ -> _Установка расширений_
 3. Напротив модуля ХуткiГрош нажмите «Установить», а затем «Изменить».
 4. Заполните параметры для идентификации вашего магазина в системе ХуткiГрош
     * Уникальный идентификатор услуги ЕРИП – ID ЕРИП услуги
