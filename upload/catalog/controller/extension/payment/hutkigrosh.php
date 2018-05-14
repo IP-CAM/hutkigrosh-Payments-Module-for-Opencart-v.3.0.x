@@ -69,7 +69,7 @@ class ControllerExtensionPaymentHutkiGrosh extends Controller
                     $arItem['invItemId'] = $line_item['product_id'];
                     $arItem['desc'] = $line_item['name'] . ' ' . $line_item['model'];
                     $arItem['count'] = round($line_item['quantity']);
-                    $arItem['amt'] = $line_item['total'];
+                    $arItem['amt'] = $this->currency->format($line_item['total'], $localOrderInfo['currency_code'], $localOrderInfo['currency_value'], false);
                     $arItems[] = $arItem;
                     unset($arItem);
                 }
@@ -82,7 +82,7 @@ class ControllerExtensionPaymentHutkiGrosh extends Controller
             $billNewRq->mobilePhone = $localOrderInfo['telephone'];
             $billNewRq->email = $localOrderInfo['email'];
             $billNewRq->fullAddress = $localOrderInfo['payment_address_1'] . ' ' . $localOrderInfo['payment_address_2'] . ' ' . $localOrderInfo['payment_zone'];
-            $billNewRq->amount = $localOrderInfo['total'];
+            $billNewRq->amount = $this->currency->format($localOrderInfo['total'], $localOrderInfo['currency_code'], $localOrderInfo['currency_value'], false);
             $billNewRq->currency = $localOrderInfo['currency_code'];
             $billNewRq->notifyByEMail = $this->config->get(self::HUTKIGROSH_EMAIL_NOTIFICATION);
             $billNewRq->notifyByMobilePhone = $this->config->get(self::HUTKIGROSH_SMS_NOTIFICATION);
