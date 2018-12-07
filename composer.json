@@ -1,0 +1,23 @@
+{
+  "name": "esas/hutkigrosh-opencart23-module",
+  "description": "Hutkigrosh opencart 2.3 payment gateway integration",
+  "require": {
+    "esas/hutkigrosh-api-php": "v2.4.0"
+  },
+  "authors": [
+    {
+      "name": "esas",
+      "email": "support@hutkigrosh.com",
+      "homepage": "https://hutkigrosh.by"
+    }
+  ],
+  "config": {
+    "vendor-dir": "src/upload/system/library/esas/vendor"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Esas\\Hutkigrosh\\": ""
+    }
+  }
+}
