@@ -64,7 +64,7 @@ class ConfigFormOpencart extends ConfigFormHtml
                </div>';
     }
 
-    function generateextAreaField(ConfigFieldTextarea $configField)
+    function generateTextAreaField(ConfigFieldTextarea $configField)
     {
         return '<div class="form-group ' . ($configField->isRequired() ? 'required' : '') . '">'
             . $this->addValidationError($configField)
@@ -74,7 +74,7 @@ class ConfigFormOpencart extends ConfigFormHtml
                                    placeholder="' . $configField->getName() . '" 
                                    rows="' . $configField->getRows() . '"
                                    cols="' . $configField->getCols() . '"  
-                                   id="input-' . $configField->getKey() . '" class="form-control">' . $configField->getValue() . '</textarea>
+                                       id="input-' . $configField->getKey() . '" class="form-control">' . $configField->getValue() . '</textarea>
                     </div>
                </div>';
     }

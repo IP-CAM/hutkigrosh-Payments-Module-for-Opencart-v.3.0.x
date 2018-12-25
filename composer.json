@@ -2,7 +2,7 @@
   "name": "esas/hutkigrosh-opencart23-module",
   "description": "Hutkigrosh opencart 2.3 payment gateway integration",
   "require": {
-    "esas/hutkigrosh-api-php": "v2.4.0"
+    "esas/hutkigrosh-api-php": "v2.5.1"
   },
   "authors": [
     {

@@ -56,10 +56,10 @@ class ControllerExtensionPaymentHutkiGrosh extends Controller
                 $controller->process($orderWrapper);
             }
             $completionPanel = new CompletionPanel($orderWrapper);
-            if ($configurationWrapper->isAlfaclickButtonEnabled()) {
+            if ($configurationWrapper->isAlfaclickSectionEnabled()) {
                 $completionPanel->setAlfaclickUrl($this->url->link(self::BASE_PATH . '/alfaclick'));
             }
-            if ($configurationWrapper->isWebpayButtonEnabled()) {
+            if ($configurationWrapper->isWebpaySectionEnabled()) {
                 $controller = new ControllerWebpayFormSimple($this->url->link(self::BASE_PATH . '/pay'));
                 $webpayResp = $controller->process($orderWrapper);
                 $completionPanel->setWebpayForm($webpayResp->getHtmlForm());
