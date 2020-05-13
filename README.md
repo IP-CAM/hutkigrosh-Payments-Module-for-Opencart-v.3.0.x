@@ -5,6 +5,9 @@
   * Модуль интеграции для версии [OpenCart 2.1.x](https://github.com/esasby/hutkigrosh-opencart2.1-module)
   * Модуль интеграции для версии [OpenCart 2.2.x](https://github.com/esasby/hutkigrosh-opencart2.2-module)
   * Модуль интеграции для версии [OpenCart 2.3.x](https://github.com/esasby/hutkigrosh-opencart2.3-module)
+  
+### Внимание ### 
+Данная библиотека больше не поддерживается. Вся текущая разработка перенесена в проект [cmsgate-opencart-hutkigrosh](https://bitbucket.esas.by/projects/CG/repos/cmsgate-opencart-hutkigrosh/browse)  
 
 ### Требования ###
 1. PHP 5.6 и выше 
